@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Balestreria Medeiros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <h1>Balestreria Medeiros</h1>
+        <button onclick="mostrarCarrinho()">
+            <i class="bi bi-cart-check"></i> <!-- Ícone atualizado -->
+            <span id="contadorCarrinho">0</span> <!-- Contador de itens no carrinho -->
+          </button>
+          
+    </header>
+
+    <main>
+    <!--a div loga abaixo é onde o html gerado no js vai ser inserido-->
+        <div class="produtosContainer" id="produtosContainer">
+
+            
+        </div>
+
+        <div id="carrinhoModal" class="modal">
+            <div class="modal-content">
+                <h2>Carrinho de Compras</h2>
+                <div id="produtosCarrinho" class="produtosCarrinho"></div>
+                <button onclick="fecharCarrinho()">Fechar</button>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
